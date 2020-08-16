@@ -1,3 +1,6 @@
+#ifndef XBSTRING_H
+#define XBSTRING_H
+
 #include <string>
 #include <algorithm>
 
@@ -11,3 +14,5 @@ void replace(std::string& str, char oldC, char newC)
 }
 
 }
+
+#endif

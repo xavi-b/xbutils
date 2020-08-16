@@ -1,5 +1,8 @@
-// timing functions
+#ifndef XBSTRING_H
+#define XBSTRING_H
+
 #include <chrono>
+#include <iostream>
 
 namespace XB
 {
@@ -28,3 +31,5 @@ struct FunctionTimer
 }
 
 #define TIME_ME XB::FunctionTimer __local_timer__(__PRETTY_FUNCTION__)
+
+#endif
