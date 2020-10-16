@@ -4,7 +4,7 @@
 namespace XB
 {
 
-template<class T>
+template <class T>
 class Singleton
 {
 public:
@@ -15,7 +15,7 @@ public:
     }
 };
 
-}
+} // namespace XB
 
 // #include <iostream>
 // class A : public Singleton<A>

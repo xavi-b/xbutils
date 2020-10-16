@@ -2,7 +2,7 @@
 #include <algorithm>
 
 // vector << value1 << value2;
-template<class T>
+template <class T>
 std::vector<T>& operator<<(std::vector<T>& v, const T& t)
 {
     v.push_back(t);
@@ -10,7 +10,7 @@ std::vector<T>& operator<<(std::vector<T>& v, const T& t)
 }
 
 // vector1 << vector2 << vector3;
-template<class T>
+template <class T>
 std::vector<T>& operator<<(std::vector<T>& vIn, std::vector<T>& v)
 {
     vIn.insert(vIn.end(), v.begin(), v.end());
@@ -21,7 +21,7 @@ namespace XB
 {
 
 // Vector replace
-template<class T>
+template <class T>
 void replace(std::vector<T>& v, const T& oldT, const T& newT)
 {
     std::replace(v.begin(), v.end(), oldT, newT);
@@ -34,11 +34,11 @@ void reset(int& i)
     i = 0;
 }
 */
-template<typename T>
+template <typename T>
 void reset(std::vector<T>& vec)
 {
-    for(T& value : vec)
+    for (T& value : vec)
         reset(value);
 }
 
-}
+} // namespace XB

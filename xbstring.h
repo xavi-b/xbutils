@@ -13,6 +13,6 @@ void replace(std::string& str, char oldC, char newC)
     std::replace(str.begin(), str.end(), oldC, newC);
 }
 
-}
+} // namespace XB
 
 #endif
